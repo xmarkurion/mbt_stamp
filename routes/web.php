@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('posts/{post}', 'PostController@show');
+
+Route::get('/Tracker', 'TrackerController@show');

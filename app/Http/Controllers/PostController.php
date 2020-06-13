@@ -4,18 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
-use App\Post;
+
 
 class PostController extends Controller
 {
-   public function show($slug)
+   public function show()
    {
        //$post = \DB::table('posts')->where('slug', $slug)->first();
        //$post = Post::where('slug', $slug)->firstOrFail();
+        //\DB::table('videos')
 
-
-       return view('post', [
-           'post' => Post::where('slug', $slug)->firstOrFail()
+       return view('welcome', [
+           'posts' => \DB::table('posts')->latest()->take(1)->get()
        ]);
    }
 

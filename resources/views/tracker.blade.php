@@ -17,20 +17,15 @@
         </tr>
         </thead>
         <tbody>
+        @foreach($videos as $video)
         <tr>
-            <th scope="row">1</th>
-            <td>Tom Campbell: MBT Moving Forward</td>
-            <td>Jerry</td>
-            <td>False</td>
+            <th scope="row">{{ $video->id }}</th>
+            <td><a href="{{ $video->mbt_link }}"> {{ $video->name }}</a></td>
+            <td>{{ $video->user_id }}</td>
+            <td> @if ($video->complete) YES @endif @if (!$video->complete) NO @endif </td>
             <td>EDIT</td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Tom Campbell: MBT Moving Forward</td>
-            <td>Otto</td>
-            <td>False</td>
-            <td>EDIT</td>
-        </tr>
+            @endforeach
         </tbody>
     </table>
 

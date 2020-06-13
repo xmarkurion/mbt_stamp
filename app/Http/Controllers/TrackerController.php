@@ -14,8 +14,31 @@ class TrackerController extends Controller
         //$post = Post::where('slug', $slug)->firstOrFail();
         //'videos'=> \DB::table('videos')->latest()->get()
 
-        return view('tracker',[
-            'videos'=> \DB::table('videos')->latest()->get()
+        return view('video.tracker',[
+            'videos'=> Video::latest()->get()
         ]);
+    }
+
+    public function create()
+    {
+        return view('video.create', []);
+    }
+
+    public function store()
+    {
+        $video = new Video();
+        $video->user_id = 1;
+        $video->name = request('name');
+        $video->mbt_link = request('mbt_link');
+        $video->save();
+
+        return redirect('video/Tracker');
+    }
+
+    public function edit($id)
+    {
+        $vid = Video::find($id);
+
+        return view('video.edit', ['vid'=>$vid]);
     }
 }

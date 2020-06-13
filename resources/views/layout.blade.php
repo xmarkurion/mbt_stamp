@@ -6,8 +6,8 @@
     <title> @yield('page_title') </title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.js"></script>
     <!-- Styles -->
     <style>
 
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/Tracker') }}">Tracker</a>
+                <a class="nav-link" href="{{ url('video/Tracker') }}">Tracker</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Login</a>

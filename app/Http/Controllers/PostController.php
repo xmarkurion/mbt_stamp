@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use App\Post;
 
 
 class PostController extends Controller
@@ -12,10 +13,11 @@ class PostController extends Controller
    {
        //$post = \DB::table('posts')->where('slug', $slug)->first();
        //$post = Post::where('slug', $slug)->firstOrFail();
-        //\DB::table('videos')
+       //\DB::table('videos')
+       //'posts' => \DB::table('posts')->latest()->take(1)->get()
 
        return view('welcome', [
-           'posts' => \DB::table('posts')->latest()->take(1)->get()
+           'posts' => Post::latest()->take(1)->get()
        ]);
    }
 

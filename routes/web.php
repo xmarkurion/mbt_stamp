@@ -17,4 +17,8 @@ Route::get('/', 'PostController@show');
 
 Route::get('posts/{post}', 'PostController@show');
 
-Route::get('/Tracker', 'TrackerController@show');
+Route::get('video/Tracker', 'TrackerController@show');
+Route::post('video/Tracker', 'TrackerController@store');
+Route::get('video/create', 'TrackerController@create');
+Route::get('video/{id}/edit', 'TrackerController@edit')->name('edit');
+

@@ -4,7 +4,7 @@
 
 @section ('content')
 
-    <h1> TRACKER ... <a href="#">Register NEW Timestamp Operation</a></h1>
+    <h1> TRACKER ... <a href="{{ url('/video/create') }}">Register NEW Timestamp Operation</a></h1>
 
     <table class="table table-striped table-dark">
         <thead>
@@ -23,7 +23,8 @@
             <td><a href="{{ $video->mbt_link }}"> {{ $video->name }}</a></td>
             <td>{{ $video->user_id }}</td>
             <td> @if ($video->complete) YES @endif @if (!$video->complete) NO @endif </td>
-            <td>EDIT</td>
+            <td><a href="{{ route('edit', [$video->id]) }}">EDIT</a></td>
+
         </tr>
             @endforeach
         </tbody>

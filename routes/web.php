@@ -21,4 +21,5 @@ Route::get('video/Tracker', 'TrackerController@show');
 Route::post('video/Tracker', 'TrackerController@store');
 Route::get('video/create', 'TrackerController@create');
 Route::get('video/{id}/edit', 'TrackerController@edit')->name('edit');
+Route::put('video/{id}', 'TrackerController@update');
 

@@ -41,4 +41,16 @@ class TrackerController extends Controller
 
         return view('video.edit', ['vid'=>$vid]);
     }
+
+    public function update($id)
+    {
+        $vid = Video::find($id);
+
+        $vid->user_id = 1;
+        $vid->name = request('name');
+        $vid->mbt_link = request('mbt_link');
+        $vid->save();
+
+        return redirect('video/Tracker');
+    }
 }

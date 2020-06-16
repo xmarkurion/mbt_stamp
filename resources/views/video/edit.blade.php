@@ -16,13 +16,13 @@
         <div class="form-group">
             <label for="">Title</label>
             <input type="text"
-                   class="form-control" name="name" id="name" aria-describedby="helpId" value="{{ $vid->name }}">
+                   class="form-control" name="name" id="name" aria-describedby="helpId" value="{{ $vid->name }}" required>
         </div>
 
         <div class="form-group">
             <label for="">MBT-link</label>
             <input type="text"
-                   class="form-control" name="mbt_link" id="mbt_link" aria-describedby="helpId" value="{{ $vid->mbt_link }}">
+                   class="form-control" name="mbt_link" id="mbt_link" aria-describedby="helpId" value="{{ $vid->mbt_link }}" required>
         </div>
 
 

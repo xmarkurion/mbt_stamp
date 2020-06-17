@@ -9,6 +9,11 @@ use App\Video;
 
 class TrackerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function show()
     {
         //$post = Post::where('slug', $slug)->firstOrFail();

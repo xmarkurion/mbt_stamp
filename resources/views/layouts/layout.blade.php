@@ -15,20 +15,21 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">MBT-YT-Tracker</a>
+    <a class="navbar-brand" href="{{ route('home_page') }}">MBT-YT-Tracker</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('video/Tracker') }}">Tracker</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Admin-panel</a>
@@ -44,7 +45,7 @@
 <footer class="blog-footer p-5">
     <div class="card">
         <div class="card-header">
-            By <a href="https://www.markurion.eu"> Markurion 2020 </a> for MBT Time stamping app
+            By <a href="https://www.markurion.eu"> Markurion 2020 </a> for MBT - Time stamping app
         </div>
     </div>
 </footer>

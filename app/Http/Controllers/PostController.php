@@ -9,6 +9,11 @@ use App\Post;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
    public function show()
    {
        //$post = \DB::table('posts')->where('slug', $slug)->first();

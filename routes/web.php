@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PostController@show');
+Route::get('/', 'PostController@show')->name('home_page');
 
 Route::get('posts/{post}', 'PostController@show');
 
@@ -23,3 +23,6 @@ Route::get('video/create', 'TrackerController@create');
 Route::get('video/{id}/edit', 'TrackerController@edit')->name('edit_video');
 Route::put('video/{id}', 'TrackerController@update');
 
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');

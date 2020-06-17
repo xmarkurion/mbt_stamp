@@ -25,4 +25,5 @@ Route::put('video/{id}', 'TrackerController@update');
 
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'PostController@show')->name('home');

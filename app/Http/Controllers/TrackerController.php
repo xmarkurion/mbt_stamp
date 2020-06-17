@@ -26,6 +26,11 @@ class TrackerController extends Controller
 
     public function store()
     {
+        request()->validate([
+            'name' => 'required',
+            'mbt_link' => 'required',
+        ]);
+
         $video = new Video();
         $video->user_id = 1;
         $video->name = request('name');
@@ -37,7 +42,7 @@ class TrackerController extends Controller
 
     public function edit($id)
     {
-        $vid = Video::find($id);
+        $vid = Video::findOrFail($id);
 
         return view('video.edit', ['vid'=>$vid]);
     }

@@ -23,7 +23,7 @@
             <td><a href="{{ $video->mbt_link }}"> {{ $video->name }}</a></td>
             <td>{{ $video->user_id }}</td>
             <td> @if ($video->complete) <a style="color: green">YES</a> @endif @if (!$video->complete) <a style="color: red">NO</a>  @endif </td>
-            <td><a href="{{ route('edit', [$video->id]) }}">EDIT</a></td>
+            <td><a href="{{ route('edit_video', [$video->id]) }}">EDIT</a></td>
         </tr>
             @endforeach
         </tbody>

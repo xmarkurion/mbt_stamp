@@ -85,11 +85,11 @@ class TrackerController extends Controller
             $vid->id = request('id');
             $vid->name = request('name');
             $vid->mbt_link = request('mbt_link');
-            if(\request('complete') == null){ $vid->complete = false;}
-            elseif(\request('complete') != null){ $vid->complete = true;}
+            if(request('complete') == null){ $vid->complete = false;}
+            elseif(request('complete') != null){ $vid->complete = true;}
             $vid->save();
 
-            return redirect('video/Tracker');
+            return redirect(route('my_tracker_page'));
         }
     }
 

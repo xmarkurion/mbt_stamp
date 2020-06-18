@@ -11,4 +11,9 @@ class Video extends Model
         $this->completed = true;
         $this->save();
     }
+
+    public function user()
+    {
+        return $this->hasOne('App\User', 'id', 'user_id');
+    }
 }

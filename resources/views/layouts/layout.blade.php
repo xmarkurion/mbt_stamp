@@ -29,7 +29,7 @@
                 <a class="nav-link" href="{{ route('tracker_page') }}">ALL Tracker</a>
             </li>
             <li class="nav-item @yield('active_status_my_tracker')">
-                <a class="nav-link" href="{{ route('tracker_page') }}">MY Tracker</a>
+                <a class="nav-link" href="{{ route('my_tracker_page') }}">MY Tracker</a>
             </li>
         </ul>
         <p class="form-inline my-2 my-lg-0">

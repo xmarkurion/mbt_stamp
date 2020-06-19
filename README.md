@@ -1,3 +1,14 @@
+## About Laravel
+install
+
+1. Git clone repo
+2. download composer
+3. php73 composer.phar install
+4. edit Env
+5. php artisan key:generate
+6. php artisan migrate:fresh
+7. Create symbolic link
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

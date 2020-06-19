@@ -38,6 +38,12 @@
                    class="form-control" name="mbt_link" id="mbt_link" aria-describedby="helpId" placeholder="{{ $vid->created_at }}" disabled>
         </div>
 
+        <div class="pt-2 form-group">
+            <label for="">Update Date</label>
+            <input type="text"
+                   class="form-control" name="mbt_link" id="mbt_link" aria-describedby="helpId" placeholder="{{ $vid->updated_at }}" disabled>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 

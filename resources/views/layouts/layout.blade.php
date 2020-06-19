@@ -31,6 +31,12 @@
             <li class="nav-item @yield('active_status_my_tracker')">
                 <a class="nav-link" href="{{ route('my_tracker_page') }}">MY Tracker</a>
             </li>
+
+            @if (Auth::user()->id == config('app.admin'))
+            <li class="nav-item @yield('active_status_admin_panel')">
+                <a class="nav-link" href="#">Admin Panel</a>
+            </li>
+            @endif
         </ul>
         <p class="form-inline my-2 my-lg-0">
             <b>{{ Auth::user()->name }}</b>

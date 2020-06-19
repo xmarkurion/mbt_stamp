@@ -6,7 +6,7 @@
 
 @section ('content')
 
-    <h1> TRACKER ... <a href="{{ url('/video/create') }}">Add new Timestamp Operation</a></h1>
+{{--    <h1> TRACKER ... <a href="{{ url('/video/create') }}">Add new Timestamp Operation</a></h1>--}}
 
     <table class="table table-striped table-dark">
         <thead>

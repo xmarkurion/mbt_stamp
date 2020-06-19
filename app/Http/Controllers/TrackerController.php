@@ -93,14 +93,7 @@ class TrackerController extends Controller
         }
     }
 
-    public function changeVideoState($id)
-    {
-        if($this->user_id_video_check($id)) {
-            $vid = Video::findOrFail($id);
-            $vid->complete = 1;
-            $vid->save();
-        }
-    }
+
 
     public function delete($id)
     {

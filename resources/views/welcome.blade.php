@@ -23,8 +23,17 @@
             <div class="container text-center">
                 <h2><p class="pb-1 pt-4"> Welcome  {{ Auth::user()->name }}, <br>Thanks for your contribution in this Time stamping project.</p></h2>
                <p class="pt-2">This is an system for tracking timestamped Videos.</p>
-                <p class="pb-5">For anny questions please contact me on Slack or send a message.</p>
-                <p class="pb-5">Click on Tracker in left corner to add tracked title.</p>
+                <p class="pb-5">For anny questions please contact MAREK on Slack or send a message.</p>
+                <p class="">-----------------------------</p>
+                <p class="">Click on My Tracker in menu to add tracked title.</p>
+                <p class="">Then click on Add new Timestamp Operation fill the title and link.</p>
+                <p class="">To get the link just copy link from browser mbt-guide and paste it in with https://</p>
+                <p class="">Example of the link: https://mbt-guide.netlify.app/iz-JB_dxv9g</p>
+                <p class="">To update state of complete just click edit near your entry.</p>
+                <p class="">Inside check checkbox complete & click Submit.</p>
+                <p class="">-----------------------------</p>
+
+
             </div>
                 @foreach ($posts as $post)
                 <div class="pb-2 card" style="">
@@ -32,15 +41,12 @@
                         <h5 class="card-title">{{ $post->title }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ $post->excerpt }}</h6>
                         <p class="card-text">{{ $post->body }}</p>
-                        <a href="#" class="card-link">Card link</a>
                        <?php # <a href="#" class="card-link">Another link</a> ?>
                     </div>
                 </div>
                 @endforeach
             <br>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="933" height="525" src="https://www.youtube.com/embed/ogmBfwcIhug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+
 
 
         </div>

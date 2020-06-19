@@ -34,7 +34,7 @@
 
             @if (Auth::user()->id == config('app.admin'))
             <li class="nav-item @yield('active_status_admin_panel')">
-                <a class="nav-link" href="#">Admin Panel</a>
+                <a class="nav-link" href="{{ route('admin_panel') }}">Admin Panel</a>
             </li>
             @endif
         </ul>

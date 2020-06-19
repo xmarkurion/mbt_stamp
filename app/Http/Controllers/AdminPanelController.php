@@ -30,6 +30,8 @@ class AdminPanelController extends Controller
 
     public function generateVideoCsv()
     {
-        return Excel::download(new VideoExport, ' videos.xls');
+        if($this->isadmin()) {
+            return Excel::download(new VideoExport, ' videos.xls');
+        }
     }
 }

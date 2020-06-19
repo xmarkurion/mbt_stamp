@@ -32,7 +32,7 @@
             <label class="custom-control-label" for="complete">Complete</label>
         </div>
 
-        <div class="pt-2 form-group">
+        <div class="pt-4 form-group">
             <label for="">Creation Date</label>
             <input type="text"
                    class="form-control" name="mbt_link" id="mbt_link" aria-describedby="helpId" placeholder="{{ $vid->created_at }}" disabled>

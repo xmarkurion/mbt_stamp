@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Video;
 use Illuminate\Support\Facades\Auth;
+use App\Exports\VideoExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class AdminPanelController extends Controller
 {
@@ -28,23 +30,6 @@ class AdminPanelController extends Controller
 
     public function generateVideoCsv()
     {
-//        $table = Video::all();
-//        $file = fopen('file.csv', 'w');
-//        foreach ($table as $row) {
-//            fputcsv($file, $row->toArray());
-//        }
-//        fclose($file);
-//
-//        // download
-//        header("Content-Description: File Transfer");
-//        header("Content-Disposition: attachment; filename=".$file);
-//        header("Content-Type: application/csv; ");
-//
-//        readfile($file);
-//        unlink($file);
-//        exit();
-
-
+        return Excel::download(new VideoExport, ' videos.xls');
     }
-
 }

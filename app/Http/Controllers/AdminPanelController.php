@@ -26,4 +26,25 @@ class AdminPanelController extends Controller
         }
     }
 
+    public function generateVideoCsv()
+    {
+//        $table = Video::all();
+//        $file = fopen('file.csv', 'w');
+//        foreach ($table as $row) {
+//            fputcsv($file, $row->toArray());
+//        }
+//        fclose($file);
+//
+//        // download
+//        header("Content-Description: File Transfer");
+//        header("Content-Disposition: attachment; filename=".$file);
+//        header("Content-Type: application/csv; ");
+//
+//        readfile($file);
+//        unlink($file);
+//        exit();
+
+
+    }
+
 }

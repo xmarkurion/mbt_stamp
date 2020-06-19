@@ -5,7 +5,15 @@
 @section('active_status_admin_panel') active @endsection
 
 @section('content')
-    <h1> Admin Panel</h1>
+
+    <div class="container text-center">
+    <form method="POST" action="{{ route('generate_csv') }}" class="pt-4">
+        @csrf
+        @method('GET')
+        <button type="submit" class="btn btn-secondary">Download CSV Copy of table</button>
+    </form>
+    </div>
+
     @endsection
 
 

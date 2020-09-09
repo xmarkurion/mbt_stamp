@@ -21,9 +21,9 @@
 {{--            @endif--}}
 
             <div class="container text-center">
-                <h2><p class="pb-1 pt-4"> Welcome  {{ Auth::user()->name }}, <br>Thanks for your contribution in this Time stamping project.</p></h2>
-               <p class="pt-2">This is an system for tracking timestamped Videos.</p>
-                <p class="pb-5">For anny questions please contact MAREK on Slack or send a message.</p>
+                <h2><p class="pb-1 pt-4"> Welcome  {{ Auth::user()->name }}, <br>Thanks for your contribution in this Timestamping project.</p></h2>
+               <p class="pt-2">This is a system for tracking timestamped Videos.</p>
+                <p class="pb-5">For any questions please contact MAREK on Slack or send a message.</p>
                 <p class="">-----------------------------</p>
                 <p class="">Click on My Tracker in menu to add tracked title.</p>
                 <p class="">Then click on Add new Timestamp Operation fill the title and link.</p>

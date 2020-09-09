@@ -61,6 +61,18 @@
                             </div>
                         </div>
 
+                        <div class="form-group row" style="margin-bottom: 50px"></div>
+                        <div class="form-group row">
+                            <label for="password-mbt" class="col-md-4 col-form-label text-md-right">{{ __('MBT Register Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-mbt" type="password" class="form-control" name="password_mbt" required autocomplete="new-password" placeholder="Password from Slack">
+                            </div>
+                        </div>
+
+
+
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

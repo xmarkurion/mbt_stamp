@@ -23,15 +23,15 @@ class AdminPanelController extends Controller
 
     public function show()
     {
-        if($this->isadmin()){
+//        if($this->isadmin()){
            return view('video.adminPanel');
-        }
+
     }
 
     public function generateVideoCsv()
     {
-        if($this->isadmin()) {
+//        if($this->isadmin()) {
             return Excel::download(new VideoExport, ' videos.xls');
-        }
+
     }
 }

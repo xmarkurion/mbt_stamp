@@ -59,7 +59,7 @@
 <footer class="blog-footer p-5">
     <div class="card">
         <div class="card-header">
-            By <a href="https://www.markurion.eu"> Markurion 2020 </a> for MBT - Time stamping app
+            By <a href="https://www.markurion.eu"> Markurion 2020 </a> for MBT - Timestamping app
         </div>
     </div>
 </footer>

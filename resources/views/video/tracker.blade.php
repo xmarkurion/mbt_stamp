@@ -13,8 +13,9 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Title</th>
-            <th scope="col">Stamped By</th>
+            <th scope="col" style="font-size: 13px">Stamped By</th>
             <th scope="col">Complete</th>
+            <th scope="col">Update&nbsp;at</th>
             <th scope="col">{{--Edit--}}</th>
         </tr>
         </thead>
@@ -25,6 +26,7 @@
             <td><a href="{{ $video->mbt_link }}"> {{ $video->name }}</a></td>
             <td>{{ $video->user->name }}</td>
             <td> @if ($video->complete) <a style="color: green">YES</a> @endif @if (!$video->complete) <a style="color: red">NO</a>  @endif </td>
+            <td style="font-size: 14px;">{{ $video->updated_at->format('Y-m-d') }}</td>
             <td><a href="{{ route('edit_video', [$video->id]) }}">EDIT</a></td>
         </tr>
             @endforeach

@@ -66,7 +66,7 @@
 
                         <div class="form-group row text-center" style="margin-bottom: 50px">
                             <div class="col-md-12">
-                                This is password below is to <b>enable</b> registration.<br>
+                                This password below is to <b>enable</b> registration.<br>
                             If the password is not correct you will get  500 | server error.<br>
                             You can get this password on slack.
                             </div>

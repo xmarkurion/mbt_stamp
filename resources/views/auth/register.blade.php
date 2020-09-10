@@ -62,8 +62,18 @@
                         </div>
 
                         <div class="form-group row" style="margin-bottom: 50px"></div>
+                        <div class="form-group row" style="margin-bottom: 50px"></div>
+
+                        <div class="form-group row text-center" style="margin-bottom: 50px">
+                            <div class="col-md-12">
+                                This is password below is to <b>enable</b> registration.<br>
+                            If the password is not correct you will get  500 | server error.<br>
+                            You can get this password on slack.
+                            </div>
+                        </div>
                         <div class="form-group row">
-                            <label for="password-mbt" class="col-md-4 col-form-label text-md-right">{{ __('MBT Register Password') }}</label>
+
+                            <label for="password-mbt" class="col-md-4 col-form-label text-md-right">{{ __('Password to enable registration') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-mbt" type="password" class="form-control" name="password_mbt" required autocomplete="new-password" placeholder="Password from Slack">

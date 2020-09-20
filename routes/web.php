@@ -26,6 +26,7 @@ Route::put('video/delete/{id}', 'TrackerController@delete')->name('video_delete'
 Route::get('video/MyTracker', 'MyTrackerController@show')->name('my_tracker_page');
 
 Route::get('admin', 'AdminPanelController@show')->name('admin_panel');
+Route::put('admin/change_name/{id}', 'AdminPanelController@update_user')->name('admin_update_name');
 Route::get('admin/generatecsv', 'AdminPanelController@generateVideoCsv')->name('generate_csv');
 
 Auth::routes();
